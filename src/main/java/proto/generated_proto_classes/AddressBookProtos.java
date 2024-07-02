@@ -3,7 +3,7 @@
 // source: addressbook.proto
 // Protobuf Java Version: 4.27.2
 
-package generated_proto_classes;
+package proto.generated_proto_classes;
 
 public final class AddressBookProtos {
   private AddressBookProtos() {}
@@ -27,17 +27,17 @@ public final class AddressBookProtos {
   }
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_proto_Person_descriptor;
-  static final 
+  static final
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_proto_Person_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_proto_Person_PhoneNumber_descriptor;
-  static final 
+  static final
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_proto_Person_PhoneNumber_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_proto_AddressBook_descriptor;
-  static final 
+  static final
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_proto_AddressBook_fieldAccessorTable;
 

@@ -3,7 +3,9 @@
 // source: addressbook.proto
 // Protobuf Java Version: 4.27.2
 
-package generated_proto_classes;
+package proto.generated_proto_classes;
+
+import proto.generated_proto_classes.AddressBookOrBuilder;
 
 /**
  * Protobuf type {@code proto.AddressBook}
@@ -11,7 +13,7 @@ package generated_proto_classes;
 public final class AddressBook extends
     com.google.protobuf.GeneratedMessage implements
     // @@protoc_insertion_point(message_implements:proto.AddressBook)
-    AddressBookOrBuilder {
+        AddressBookOrBuilder {
 private static final long serialVersionUID = 0L;
   static {
     com.google.protobuf.RuntimeVersion.validateProtobufGencodeVersion(
@@ -32,32 +34,32 @@ private static final long serialVersionUID = 0L;
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return generated_proto_classes.AddressBookProtos.internal_static_proto_AddressBook_descriptor;
+    return AddressBookProtos.internal_static_proto_AddressBook_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return generated_proto_classes.AddressBookProtos.internal_static_proto_AddressBook_fieldAccessorTable
+    return AddressBookProtos.internal_static_proto_AddressBook_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            generated_proto_classes.AddressBook.class, generated_proto_classes.AddressBook.Builder.class);
+            AddressBook.class, AddressBook.Builder.class);
   }
 
   public static final int PEOPLE_FIELD_NUMBER = 1;
   @SuppressWarnings("serial")
-  private java.util.List<generated_proto_classes.Person> people_;
+  private java.util.List<Person> people_;
   /**
    * <code>repeated .proto.Person people = 1;</code>
    */
   @java.lang.Override
-  public java.util.List<generated_proto_classes.Person> getPeopleList() {
+  public java.util.List<Person> getPeopleList() {
     return people_;
   }
   /**
    * <code>repeated .proto.Person people = 1;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends generated_proto_classes.PersonOrBuilder> 
+  public java.util.List<? extends PersonOrBuilder> 
       getPeopleOrBuilderList() {
     return people_;
   }
@@ -72,14 +74,14 @@ private static final long serialVersionUID = 0L;
    * <code>repeated .proto.Person people = 1;</code>
    */
   @java.lang.Override
-  public generated_proto_classes.Person getPeople(int index) {
+  public Person getPeople(int index) {
     return people_.get(index);
   }
   /**
    * <code>repeated .proto.Person people = 1;</code>
    */
   @java.lang.Override
-  public generated_proto_classes.PersonOrBuilder getPeopleOrBuilder(
+  public PersonOrBuilder getPeopleOrBuilder(
       int index) {
     return people_.get(index);
   }
@@ -124,10 +126,10 @@ private static final long serialVersionUID = 0L;
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof generated_proto_classes.AddressBook)) {
+    if (!(obj instanceof AddressBook)) {
       return super.equals(obj);
     }
-    generated_proto_classes.AddressBook other = (generated_proto_classes.AddressBook) obj;
+    AddressBook other = (AddressBook) obj;
 
     if (!getPeopleList()
         .equals(other.getPeopleList())) return false;
@@ -151,44 +153,44 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static generated_proto_classes.AddressBook parseFrom(
+  public static AddressBook parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static generated_proto_classes.AddressBook parseFrom(
+  public static AddressBook parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static generated_proto_classes.AddressBook parseFrom(
+  public static AddressBook parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static generated_proto_classes.AddressBook parseFrom(
+  public static AddressBook parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static generated_proto_classes.AddressBook parseFrom(byte[] data)
+  public static AddressBook parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static generated_proto_classes.AddressBook parseFrom(
+  public static AddressBook parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static generated_proto_classes.AddressBook parseFrom(java.io.InputStream input)
+  public static AddressBook parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessage
         .parseWithIOException(PARSER, input);
   }
-  public static generated_proto_classes.AddressBook parseFrom(
+  public static AddressBook parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -196,26 +198,26 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  public static generated_proto_classes.AddressBook parseDelimitedFrom(java.io.InputStream input)
+  public static AddressBook parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessage
         .parseDelimitedWithIOException(PARSER, input);
   }
 
-  public static generated_proto_classes.AddressBook parseDelimitedFrom(
+  public static AddressBook parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessage
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static generated_proto_classes.AddressBook parseFrom(
+  public static AddressBook parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessage
         .parseWithIOException(PARSER, input);
   }
-  public static generated_proto_classes.AddressBook parseFrom(
+  public static AddressBook parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -228,7 +230,7 @@ private static final long serialVersionUID = 0L;
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(generated_proto_classes.AddressBook prototype) {
+  public static Builder newBuilder(AddressBook prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   @java.lang.Override
@@ -249,21 +251,21 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessage.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:proto.AddressBook)
-      generated_proto_classes.AddressBookOrBuilder {
+      AddressBookOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return generated_proto_classes.AddressBookProtos.internal_static_proto_AddressBook_descriptor;
+      return AddressBookProtos.internal_static_proto_AddressBook_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return generated_proto_classes.AddressBookProtos.internal_static_proto_AddressBook_fieldAccessorTable
+      return AddressBookProtos.internal_static_proto_AddressBook_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              generated_proto_classes.AddressBook.class, generated_proto_classes.AddressBook.Builder.class);
+              AddressBook.class, AddressBook.Builder.class);
     }
 
-    // Construct using generated_proto_classes.AddressBook.newBuilder()
+    // Construct using AddressBook.newBuilder()
     private Builder() {
 
     }
@@ -290,17 +292,17 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return generated_proto_classes.AddressBookProtos.internal_static_proto_AddressBook_descriptor;
+      return AddressBookProtos.internal_static_proto_AddressBook_descriptor;
     }
 
     @java.lang.Override
-    public generated_proto_classes.AddressBook getDefaultInstanceForType() {
-      return generated_proto_classes.AddressBook.getDefaultInstance();
+    public AddressBook getDefaultInstanceForType() {
+      return AddressBook.getDefaultInstance();
     }
 
     @java.lang.Override
-    public generated_proto_classes.AddressBook build() {
-      generated_proto_classes.AddressBook result = buildPartial();
+    public AddressBook build() {
+      AddressBook result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
@@ -308,15 +310,15 @@ private static final long serialVersionUID = 0L;
     }
 
     @java.lang.Override
-    public generated_proto_classes.AddressBook buildPartial() {
-      generated_proto_classes.AddressBook result = new generated_proto_classes.AddressBook(this);
+    public AddressBook buildPartial() {
+      AddressBook result = new AddressBook(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(generated_proto_classes.AddressBook result) {
+    private void buildPartialRepeatedFields(AddressBook result) {
       if (peopleBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           people_ = java.util.Collections.unmodifiableList(people_);
@@ -328,22 +330,22 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(generated_proto_classes.AddressBook result) {
+    private void buildPartial0(AddressBook result) {
       int from_bitField0_ = bitField0_;
     }
 
     @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof generated_proto_classes.AddressBook) {
-        return mergeFrom((generated_proto_classes.AddressBook)other);
+      if (other instanceof AddressBook) {
+        return mergeFrom((AddressBook)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(generated_proto_classes.AddressBook other) {
-      if (other == generated_proto_classes.AddressBook.getDefaultInstance()) return this;
+    public Builder mergeFrom(AddressBook other) {
+      if (other == AddressBook.getDefaultInstance()) return this;
       if (peopleBuilder_ == null) {
         if (!other.people_.isEmpty()) {
           if (people_.isEmpty()) {
@@ -397,9 +399,9 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              generated_proto_classes.Person m =
+              Person m =
                   input.readMessage(
-                      generated_proto_classes.Person.parser(),
+                      Person.parser(),
                       extensionRegistry);
               if (peopleBuilder_ == null) {
                 ensurePeopleIsMutable();
@@ -426,22 +428,22 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.util.List<generated_proto_classes.Person> people_ =
+    private java.util.List<Person> people_ =
       java.util.Collections.emptyList();
     private void ensurePeopleIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        people_ = new java.util.ArrayList<generated_proto_classes.Person>(people_);
+        people_ = new java.util.ArrayList<Person>(people_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilder<
-        generated_proto_classes.Person, generated_proto_classes.Person.Builder, generated_proto_classes.PersonOrBuilder> peopleBuilder_;
+        Person, Person.Builder, PersonOrBuilder> peopleBuilder_;
 
     /**
      * <code>repeated .proto.Person people = 1;</code>
      */
-    public java.util.List<generated_proto_classes.Person> getPeopleList() {
+    public java.util.List<Person> getPeopleList() {
       if (peopleBuilder_ == null) {
         return java.util.Collections.unmodifiableList(people_);
       } else {
@@ -461,7 +463,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .proto.Person people = 1;</code>
      */
-    public generated_proto_classes.Person getPeople(int index) {
+    public Person getPeople(int index) {
       if (peopleBuilder_ == null) {
         return people_.get(index);
       } else {
@@ -472,7 +474,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .proto.Person people = 1;</code>
      */
     public Builder setPeople(
-        int index, generated_proto_classes.Person value) {
+        int index, Person value) {
       if (peopleBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -489,7 +491,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .proto.Person people = 1;</code>
      */
     public Builder setPeople(
-        int index, generated_proto_classes.Person.Builder builderForValue) {
+        int index, Person.Builder builderForValue) {
       if (peopleBuilder_ == null) {
         ensurePeopleIsMutable();
         people_.set(index, builderForValue.build());
@@ -502,7 +504,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .proto.Person people = 1;</code>
      */
-    public Builder addPeople(generated_proto_classes.Person value) {
+    public Builder addPeople(Person value) {
       if (peopleBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -519,7 +521,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .proto.Person people = 1;</code>
      */
     public Builder addPeople(
-        int index, generated_proto_classes.Person value) {
+        int index, Person value) {
       if (peopleBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -536,7 +538,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .proto.Person people = 1;</code>
      */
     public Builder addPeople(
-        generated_proto_classes.Person.Builder builderForValue) {
+        Person.Builder builderForValue) {
       if (peopleBuilder_ == null) {
         ensurePeopleIsMutable();
         people_.add(builderForValue.build());
@@ -550,7 +552,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .proto.Person people = 1;</code>
      */
     public Builder addPeople(
-        int index, generated_proto_classes.Person.Builder builderForValue) {
+        int index, Person.Builder builderForValue) {
       if (peopleBuilder_ == null) {
         ensurePeopleIsMutable();
         people_.add(index, builderForValue.build());
@@ -564,7 +566,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .proto.Person people = 1;</code>
      */
     public Builder addAllPeople(
-        java.lang.Iterable<? extends generated_proto_classes.Person> values) {
+        java.lang.Iterable<? extends Person> values) {
       if (peopleBuilder_ == null) {
         ensurePeopleIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -604,14 +606,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .proto.Person people = 1;</code>
      */
-    public generated_proto_classes.Person.Builder getPeopleBuilder(
+    public Person.Builder getPeopleBuilder(
         int index) {
       return getPeopleFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .proto.Person people = 1;</code>
      */
-    public generated_proto_classes.PersonOrBuilder getPeopleOrBuilder(
+    public PersonOrBuilder getPeopleOrBuilder(
         int index) {
       if (peopleBuilder_ == null) {
         return people_.get(index);  } else {
@@ -621,7 +623,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .proto.Person people = 1;</code>
      */
-    public java.util.List<? extends generated_proto_classes.PersonOrBuilder> 
+    public java.util.List<? extends PersonOrBuilder> 
          getPeopleOrBuilderList() {
       if (peopleBuilder_ != null) {
         return peopleBuilder_.getMessageOrBuilderList();
@@ -632,31 +634,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .proto.Person people = 1;</code>
      */
-    public generated_proto_classes.Person.Builder addPeopleBuilder() {
+    public Person.Builder addPeopleBuilder() {
       return getPeopleFieldBuilder().addBuilder(
-          generated_proto_classes.Person.getDefaultInstance());
+          Person.getDefaultInstance());
     }
     /**
      * <code>repeated .proto.Person people = 1;</code>
      */
-    public generated_proto_classes.Person.Builder addPeopleBuilder(
+    public Person.Builder addPeopleBuilder(
         int index) {
       return getPeopleFieldBuilder().addBuilder(
-          index, generated_proto_classes.Person.getDefaultInstance());
+          index, Person.getDefaultInstance());
     }
     /**
      * <code>repeated .proto.Person people = 1;</code>
      */
-    public java.util.List<generated_proto_classes.Person.Builder> 
+    public java.util.List<Person.Builder> 
          getPeopleBuilderList() {
       return getPeopleFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilder<
-        generated_proto_classes.Person, generated_proto_classes.Person.Builder, generated_proto_classes.PersonOrBuilder> 
+        Person, Person.Builder, PersonOrBuilder> 
         getPeopleFieldBuilder() {
       if (peopleBuilder_ == null) {
         peopleBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-            generated_proto_classes.Person, generated_proto_classes.Person.Builder, generated_proto_classes.PersonOrBuilder>(
+            Person, Person.Builder, PersonOrBuilder>(
                 people_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
@@ -670,12 +672,12 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:proto.AddressBook)
-  private static final generated_proto_classes.AddressBook DEFAULT_INSTANCE;
+  private static final AddressBook DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new generated_proto_classes.AddressBook();
+    DEFAULT_INSTANCE = new AddressBook();
   }
 
-  public static generated_proto_classes.AddressBook getDefaultInstance() {
+  public static AddressBook getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -711,7 +713,7 @@ private static final long serialVersionUID = 0L;
   }
 
   @java.lang.Override
-  public generated_proto_classes.AddressBook getDefaultInstanceForType() {
+  public AddressBook getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

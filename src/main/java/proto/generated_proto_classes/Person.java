@@ -3,7 +3,9 @@
 // source: addressbook.proto
 // Protobuf Java Version: 4.27.2
 
-package generated_proto_classes;
+package proto.generated_proto_classes;
+
+import proto.generated_proto_classes.PersonOrBuilder;
 
 /**
  * Protobuf type {@code proto.Person}
@@ -11,7 +13,7 @@ package generated_proto_classes;
 public final class Person extends
     com.google.protobuf.GeneratedMessage implements
     // @@protoc_insertion_point(message_implements:proto.Person)
-    PersonOrBuilder {
+        PersonOrBuilder {
 private static final long serialVersionUID = 0L;
   static {
     com.google.protobuf.RuntimeVersion.validateProtobufGencodeVersion(
@@ -34,15 +36,15 @@ private static final long serialVersionUID = 0L;
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return generated_proto_classes.AddressBookProtos.internal_static_proto_Person_descriptor;
+    return proto.generated_proto_classes.AddressBookProtos.internal_static_proto_Person_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return generated_proto_classes.AddressBookProtos.internal_static_proto_Person_fieldAccessorTable
+    return proto.generated_proto_classes.AddressBookProtos.internal_static_proto_Person_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            generated_proto_classes.Person.class, generated_proto_classes.Person.Builder.class);
+            Person.class, Person.Builder.class);
   }
 
   /**
@@ -154,7 +156,7 @@ private static final long serialVersionUID = 0L;
     }
     public static final com.google.protobuf.Descriptors.EnumDescriptor
         getDescriptor() {
-      return generated_proto_classes.Person.getDescriptor().getEnumTypes().get(0);
+      return  Person.getDescriptor().getEnumTypes().get(0);
     }
 
     private static final PhoneType[] VALUES = values();
@@ -215,7 +217,7 @@ private static final long serialVersionUID = 0L;
      * <code>optional .proto.Person.PhoneType type = 2;</code>
      * @return The type.
      */
-    generated_proto_classes.Person.PhoneType getType();
+     Person.PhoneType getType();
   }
   /**
    * Protobuf type {@code proto.Person.PhoneNumber}
@@ -245,15 +247,15 @@ private static final long serialVersionUID = 0L;
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return generated_proto_classes.AddressBookProtos.internal_static_proto_Person_PhoneNumber_descriptor;
+      return  AddressBookProtos.internal_static_proto_Person_PhoneNumber_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return generated_proto_classes.AddressBookProtos.internal_static_proto_Person_PhoneNumber_fieldAccessorTable
+      return  AddressBookProtos.internal_static_proto_Person_PhoneNumber_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              generated_proto_classes.Person.PhoneNumber.class, generated_proto_classes.Person.PhoneNumber.Builder.class);
+               Person.PhoneNumber.class,  Person.PhoneNumber.Builder.class);
     }
 
     private int bitField0_;
@@ -324,9 +326,9 @@ private static final long serialVersionUID = 0L;
      * <code>optional .proto.Person.PhoneType type = 2;</code>
      * @return The type.
      */
-    @java.lang.Override public generated_proto_classes.Person.PhoneType getType() {
-      generated_proto_classes.Person.PhoneType result = generated_proto_classes.Person.PhoneType.forNumber(type_);
-      return result == null ? generated_proto_classes.Person.PhoneType.UNRECOGNIZED : result;
+    @java.lang.Override public  Person.PhoneType getType() {
+       Person.PhoneType result =  Person.PhoneType.forNumber(type_);
+      return result == null ?  Person.PhoneType.UNRECOGNIZED : result;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -375,10 +377,10 @@ private static final long serialVersionUID = 0L;
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof generated_proto_classes.Person.PhoneNumber)) {
+      if (!(obj instanceof  Person.PhoneNumber)) {
         return super.equals(obj);
       }
-      generated_proto_classes.Person.PhoneNumber other = (generated_proto_classes.Person.PhoneNumber) obj;
+       Person.PhoneNumber other = ( Person.PhoneNumber) obj;
 
       if (hasNumber() != other.hasNumber()) return false;
       if (hasNumber()) {
@@ -413,44 +415,44 @@ private static final long serialVersionUID = 0L;
       return hash;
     }
 
-    public static generated_proto_classes.Person.PhoneNumber parseFrom(
+    public static  Person.PhoneNumber parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static generated_proto_classes.Person.PhoneNumber parseFrom(
+    public static  Person.PhoneNumber parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static generated_proto_classes.Person.PhoneNumber parseFrom(
+    public static  Person.PhoneNumber parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static generated_proto_classes.Person.PhoneNumber parseFrom(
+    public static  Person.PhoneNumber parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static generated_proto_classes.Person.PhoneNumber parseFrom(byte[] data)
+    public static  Person.PhoneNumber parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static generated_proto_classes.Person.PhoneNumber parseFrom(
+    public static  Person.PhoneNumber parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static generated_proto_classes.Person.PhoneNumber parseFrom(java.io.InputStream input)
+    public static  Person.PhoneNumber parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static generated_proto_classes.Person.PhoneNumber parseFrom(
+    public static  Person.PhoneNumber parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -458,26 +460,26 @@ private static final long serialVersionUID = 0L;
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static generated_proto_classes.Person.PhoneNumber parseDelimitedFrom(java.io.InputStream input)
+    public static  Person.PhoneNumber parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static generated_proto_classes.Person.PhoneNumber parseDelimitedFrom(
+    public static  Person.PhoneNumber parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static generated_proto_classes.Person.PhoneNumber parseFrom(
+    public static  Person.PhoneNumber parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static generated_proto_classes.Person.PhoneNumber parseFrom(
+    public static  Person.PhoneNumber parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -490,7 +492,7 @@ private static final long serialVersionUID = 0L;
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(generated_proto_classes.Person.PhoneNumber prototype) {
+    public static Builder newBuilder( Person.PhoneNumber prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -511,21 +513,21 @@ private static final long serialVersionUID = 0L;
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:proto.Person.PhoneNumber)
-        generated_proto_classes.Person.PhoneNumberOrBuilder {
+         Person.PhoneNumberOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return generated_proto_classes.AddressBookProtos.internal_static_proto_Person_PhoneNumber_descriptor;
+        return  AddressBookProtos.internal_static_proto_Person_PhoneNumber_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return generated_proto_classes.AddressBookProtos.internal_static_proto_Person_PhoneNumber_fieldAccessorTable
+        return  AddressBookProtos.internal_static_proto_Person_PhoneNumber_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                generated_proto_classes.Person.PhoneNumber.class, generated_proto_classes.Person.PhoneNumber.Builder.class);
+                 Person.PhoneNumber.class,  Person.PhoneNumber.Builder.class);
       }
 
-      // Construct using generated_proto_classes.Person.PhoneNumber.newBuilder()
+      // Construct using  Person.PhoneNumber.newBuilder()
       private Builder() {
 
       }
@@ -547,17 +549,17 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return generated_proto_classes.AddressBookProtos.internal_static_proto_Person_PhoneNumber_descriptor;
+        return  AddressBookProtos.internal_static_proto_Person_PhoneNumber_descriptor;
       }
 
       @java.lang.Override
-      public generated_proto_classes.Person.PhoneNumber getDefaultInstanceForType() {
-        return generated_proto_classes.Person.PhoneNumber.getDefaultInstance();
+      public  Person.PhoneNumber getDefaultInstanceForType() {
+        return  Person.PhoneNumber.getDefaultInstance();
       }
 
       @java.lang.Override
-      public generated_proto_classes.Person.PhoneNumber build() {
-        generated_proto_classes.Person.PhoneNumber result = buildPartial();
+      public  Person.PhoneNumber build() {
+         Person.PhoneNumber result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -565,14 +567,14 @@ private static final long serialVersionUID = 0L;
       }
 
       @java.lang.Override
-      public generated_proto_classes.Person.PhoneNumber buildPartial() {
-        generated_proto_classes.Person.PhoneNumber result = new generated_proto_classes.Person.PhoneNumber(this);
+      public  Person.PhoneNumber buildPartial() {
+         Person.PhoneNumber result = new  Person.PhoneNumber(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(generated_proto_classes.Person.PhoneNumber result) {
+      private void buildPartial0( Person.PhoneNumber result) {
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) != 0)) {
@@ -588,16 +590,16 @@ private static final long serialVersionUID = 0L;
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof generated_proto_classes.Person.PhoneNumber) {
-          return mergeFrom((generated_proto_classes.Person.PhoneNumber)other);
+        if (other instanceof  Person.PhoneNumber) {
+          return mergeFrom(( Person.PhoneNumber)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(generated_proto_classes.Person.PhoneNumber other) {
-        if (other == generated_proto_classes.Person.PhoneNumber.getDefaultInstance()) return this;
+      public Builder mergeFrom( Person.PhoneNumber other) {
+        if (other ==  Person.PhoneNumber.getDefaultInstance()) return this;
         if (other.hasNumber()) {
           number_ = other.number_;
           bitField0_ |= 0x00000001;
@@ -769,16 +771,16 @@ private static final long serialVersionUID = 0L;
        * @return The type.
        */
       @java.lang.Override
-      public generated_proto_classes.Person.PhoneType getType() {
-        generated_proto_classes.Person.PhoneType result = generated_proto_classes.Person.PhoneType.forNumber(type_);
-        return result == null ? generated_proto_classes.Person.PhoneType.UNRECOGNIZED : result;
+      public  Person.PhoneType getType() {
+         Person.PhoneType result =  Person.PhoneType.forNumber(type_);
+        return result == null ?  Person.PhoneType.UNRECOGNIZED : result;
       }
       /**
        * <code>optional .proto.Person.PhoneType type = 2;</code>
        * @param value The type to set.
        * @return This builder for chaining.
        */
-      public Builder setType(generated_proto_classes.Person.PhoneType value) {
+      public Builder setType( Person.PhoneType value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -802,12 +804,12 @@ private static final long serialVersionUID = 0L;
     }
 
     // @@protoc_insertion_point(class_scope:proto.Person.PhoneNumber)
-    private static final generated_proto_classes.Person.PhoneNumber DEFAULT_INSTANCE;
+    private static final  Person.PhoneNumber DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new generated_proto_classes.Person.PhoneNumber();
+      DEFAULT_INSTANCE = new  Person.PhoneNumber();
     }
 
-    public static generated_proto_classes.Person.PhoneNumber getDefaultInstance() {
+    public static  Person.PhoneNumber getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -843,7 +845,7 @@ private static final long serialVersionUID = 0L;
     }
 
     @java.lang.Override
-    public generated_proto_classes.Person.PhoneNumber getDefaultInstanceForType() {
+    public  Person.PhoneNumber getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -965,19 +967,19 @@ private static final long serialVersionUID = 0L;
 
   public static final int PHONES_FIELD_NUMBER = 4;
   @SuppressWarnings("serial")
-  private java.util.List<generated_proto_classes.Person.PhoneNumber> phones_;
+  private java.util.List< Person.PhoneNumber> phones_;
   /**
    * <code>repeated .proto.Person.PhoneNumber phones = 4;</code>
    */
   @java.lang.Override
-  public java.util.List<generated_proto_classes.Person.PhoneNumber> getPhonesList() {
+  public java.util.List<PhoneNumber> getPhonesList() {
     return phones_;
   }
   /**
    * <code>repeated .proto.Person.PhoneNumber phones = 4;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends generated_proto_classes.Person.PhoneNumberOrBuilder> 
+  public java.util.List<? extends  Person.PhoneNumberOrBuilder> 
       getPhonesOrBuilderList() {
     return phones_;
   }
@@ -992,14 +994,14 @@ private static final long serialVersionUID = 0L;
    * <code>repeated .proto.Person.PhoneNumber phones = 4;</code>
    */
   @java.lang.Override
-  public generated_proto_classes.Person.PhoneNumber getPhones(int index) {
+  public  Person.PhoneNumber getPhones(int index) {
     return phones_.get(index);
   }
   /**
    * <code>repeated .proto.Person.PhoneNumber phones = 4;</code>
    */
   @java.lang.Override
-  public generated_proto_classes.Person.PhoneNumberOrBuilder getPhonesOrBuilder(
+  public  Person.PhoneNumberOrBuilder getPhonesOrBuilder(
       int index) {
     return phones_.get(index);
   }
@@ -1063,10 +1065,10 @@ private static final long serialVersionUID = 0L;
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof generated_proto_classes.Person)) {
+    if (!(obj instanceof  Person)) {
       return super.equals(obj);
     }
-    generated_proto_classes.Person other = (generated_proto_classes.Person) obj;
+     Person other = ( Person) obj;
 
     if (hasName() != other.hasName()) return false;
     if (hasName()) {
@@ -1117,44 +1119,44 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static generated_proto_classes.Person parseFrom(
+  public static  Person parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static generated_proto_classes.Person parseFrom(
+  public static  Person parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static generated_proto_classes.Person parseFrom(
+  public static  Person parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static generated_proto_classes.Person parseFrom(
+  public static  Person parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static generated_proto_classes.Person parseFrom(byte[] data)
+  public static  Person parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static generated_proto_classes.Person parseFrom(
+  public static  Person parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static generated_proto_classes.Person parseFrom(java.io.InputStream input)
+  public static  Person parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessage
         .parseWithIOException(PARSER, input);
   }
-  public static generated_proto_classes.Person parseFrom(
+  public static  Person parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -1162,26 +1164,26 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  public static generated_proto_classes.Person parseDelimitedFrom(java.io.InputStream input)
+  public static  Person parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessage
         .parseDelimitedWithIOException(PARSER, input);
   }
 
-  public static generated_proto_classes.Person parseDelimitedFrom(
+  public static  Person parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessage
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static generated_proto_classes.Person parseFrom(
+  public static  Person parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessage
         .parseWithIOException(PARSER, input);
   }
-  public static generated_proto_classes.Person parseFrom(
+  public static  Person parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -1194,7 +1196,7 @@ private static final long serialVersionUID = 0L;
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(generated_proto_classes.Person prototype) {
+  public static Builder newBuilder( Person prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   @java.lang.Override
@@ -1215,21 +1217,21 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessage.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:proto.Person)
-      generated_proto_classes.PersonOrBuilder {
+       PersonOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return generated_proto_classes.AddressBookProtos.internal_static_proto_Person_descriptor;
+      return  AddressBookProtos.internal_static_proto_Person_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return generated_proto_classes.AddressBookProtos.internal_static_proto_Person_fieldAccessorTable
+      return  AddressBookProtos.internal_static_proto_Person_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              generated_proto_classes.Person.class, generated_proto_classes.Person.Builder.class);
+               Person.class,  Person.Builder.class);
     }
 
-    // Construct using generated_proto_classes.Person.newBuilder()
+    // Construct using  Person.newBuilder()
     private Builder() {
 
     }
@@ -1259,17 +1261,17 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return generated_proto_classes.AddressBookProtos.internal_static_proto_Person_descriptor;
+      return  AddressBookProtos.internal_static_proto_Person_descriptor;
     }
 
     @java.lang.Override
-    public generated_proto_classes.Person getDefaultInstanceForType() {
-      return generated_proto_classes.Person.getDefaultInstance();
+    public  Person getDefaultInstanceForType() {
+      return  Person.getDefaultInstance();
     }
 
     @java.lang.Override
-    public generated_proto_classes.Person build() {
-      generated_proto_classes.Person result = buildPartial();
+    public  Person build() {
+       Person result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
@@ -1277,15 +1279,15 @@ private static final long serialVersionUID = 0L;
     }
 
     @java.lang.Override
-    public generated_proto_classes.Person buildPartial() {
-      generated_proto_classes.Person result = new generated_proto_classes.Person(this);
+    public  Person buildPartial() {
+       Person result = new  Person(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(generated_proto_classes.Person result) {
+    private void buildPartialRepeatedFields( Person result) {
       if (phonesBuilder_ == null) {
         if (((bitField0_ & 0x00000008) != 0)) {
           phones_ = java.util.Collections.unmodifiableList(phones_);
@@ -1297,7 +1299,7 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(generated_proto_classes.Person result) {
+    private void buildPartial0( Person result) {
       int from_bitField0_ = bitField0_;
       int to_bitField0_ = 0;
       if (((from_bitField0_ & 0x00000001) != 0)) {
@@ -1317,16 +1319,16 @@ private static final long serialVersionUID = 0L;
 
     @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof generated_proto_classes.Person) {
-        return mergeFrom((generated_proto_classes.Person)other);
+      if (other instanceof  Person) {
+        return mergeFrom(( Person)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(generated_proto_classes.Person other) {
-      if (other == generated_proto_classes.Person.getDefaultInstance()) return this;
+    public Builder mergeFrom( Person other) {
+      if (other ==  Person.getDefaultInstance()) return this;
       if (other.hasName()) {
         name_ = other.name_;
         bitField0_ |= 0x00000001;
@@ -1408,9 +1410,9 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 26
             case 34: {
-              generated_proto_classes.Person.PhoneNumber m =
+               Person.PhoneNumber m =
                   input.readMessage(
-                      generated_proto_classes.Person.PhoneNumber.parser(),
+                       Person.PhoneNumber.parser(),
                       extensionRegistry);
               if (phonesBuilder_ == null) {
                 ensurePhonesIsMutable();
@@ -1635,22 +1637,22 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.util.List<generated_proto_classes.Person.PhoneNumber> phones_ =
+    private java.util.List< Person.PhoneNumber> phones_ =
       java.util.Collections.emptyList();
     private void ensurePhonesIsMutable() {
       if (!((bitField0_ & 0x00000008) != 0)) {
-        phones_ = new java.util.ArrayList<generated_proto_classes.Person.PhoneNumber>(phones_);
+        phones_ = new java.util.ArrayList< Person.PhoneNumber>(phones_);
         bitField0_ |= 0x00000008;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilder<
-        generated_proto_classes.Person.PhoneNumber, generated_proto_classes.Person.PhoneNumber.Builder, generated_proto_classes.Person.PhoneNumberOrBuilder> phonesBuilder_;
+         Person.PhoneNumber,  Person.PhoneNumber.Builder,  Person.PhoneNumberOrBuilder> phonesBuilder_;
 
     /**
      * <code>repeated .proto.Person.PhoneNumber phones = 4;</code>
      */
-    public java.util.List<generated_proto_classes.Person.PhoneNumber> getPhonesList() {
+    public java.util.List<Person.PhoneNumber> getPhonesList() {
       if (phonesBuilder_ == null) {
         return java.util.Collections.unmodifiableList(phones_);
       } else {
@@ -1670,7 +1672,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .proto.Person.PhoneNumber phones = 4;</code>
      */
-    public generated_proto_classes.Person.PhoneNumber getPhones(int index) {
+    public  Person.PhoneNumber getPhones(int index) {
       if (phonesBuilder_ == null) {
         return phones_.get(index);
       } else {
@@ -1681,7 +1683,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .proto.Person.PhoneNumber phones = 4;</code>
      */
     public Builder setPhones(
-        int index, generated_proto_classes.Person.PhoneNumber value) {
+        int index,  Person.PhoneNumber value) {
       if (phonesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1698,7 +1700,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .proto.Person.PhoneNumber phones = 4;</code>
      */
     public Builder setPhones(
-        int index, generated_proto_classes.Person.PhoneNumber.Builder builderForValue) {
+        int index,  Person.PhoneNumber.Builder builderForValue) {
       if (phonesBuilder_ == null) {
         ensurePhonesIsMutable();
         phones_.set(index, builderForValue.build());
@@ -1711,7 +1713,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .proto.Person.PhoneNumber phones = 4;</code>
      */
-    public Builder addPhones(generated_proto_classes.Person.PhoneNumber value) {
+    public Builder addPhones( Person.PhoneNumber value) {
       if (phonesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1728,7 +1730,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .proto.Person.PhoneNumber phones = 4;</code>
      */
     public Builder addPhones(
-        int index, generated_proto_classes.Person.PhoneNumber value) {
+        int index,  Person.PhoneNumber value) {
       if (phonesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1745,7 +1747,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .proto.Person.PhoneNumber phones = 4;</code>
      */
     public Builder addPhones(
-        generated_proto_classes.Person.PhoneNumber.Builder builderForValue) {
+         Person.PhoneNumber.Builder builderForValue) {
       if (phonesBuilder_ == null) {
         ensurePhonesIsMutable();
         phones_.add(builderForValue.build());
@@ -1759,7 +1761,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .proto.Person.PhoneNumber phones = 4;</code>
      */
     public Builder addPhones(
-        int index, generated_proto_classes.Person.PhoneNumber.Builder builderForValue) {
+        int index,  Person.PhoneNumber.Builder builderForValue) {
       if (phonesBuilder_ == null) {
         ensurePhonesIsMutable();
         phones_.add(index, builderForValue.build());
@@ -1773,7 +1775,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .proto.Person.PhoneNumber phones = 4;</code>
      */
     public Builder addAllPhones(
-        java.lang.Iterable<? extends generated_proto_classes.Person.PhoneNumber> values) {
+        java.lang.Iterable<? extends  Person.PhoneNumber> values) {
       if (phonesBuilder_ == null) {
         ensurePhonesIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1813,14 +1815,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .proto.Person.PhoneNumber phones = 4;</code>
      */
-    public generated_proto_classes.Person.PhoneNumber.Builder getPhonesBuilder(
+    public  Person.PhoneNumber.Builder getPhonesBuilder(
         int index) {
       return getPhonesFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .proto.Person.PhoneNumber phones = 4;</code>
      */
-    public generated_proto_classes.Person.PhoneNumberOrBuilder getPhonesOrBuilder(
+    public  PhoneNumberOrBuilder getPhonesOrBuilder(
         int index) {
       if (phonesBuilder_ == null) {
         return phones_.get(index);  } else {
@@ -1830,7 +1832,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .proto.Person.PhoneNumber phones = 4;</code>
      */
-    public java.util.List<? extends generated_proto_classes.Person.PhoneNumberOrBuilder> 
+    public java.util.List<? extends  PhoneNumberOrBuilder>
          getPhonesOrBuilderList() {
       if (phonesBuilder_ != null) {
         return phonesBuilder_.getMessageOrBuilderList();
@@ -1841,31 +1843,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .proto.Person.PhoneNumber phones = 4;</code>
      */
-    public generated_proto_classes.Person.PhoneNumber.Builder addPhonesBuilder() {
+    public  Person.PhoneNumber.Builder addPhonesBuilder() {
       return getPhonesFieldBuilder().addBuilder(
-          generated_proto_classes.Person.PhoneNumber.getDefaultInstance());
+           Person.PhoneNumber.getDefaultInstance());
     }
     /**
      * <code>repeated .proto.Person.PhoneNumber phones = 4;</code>
      */
-    public generated_proto_classes.Person.PhoneNumber.Builder addPhonesBuilder(
+    public  Person.PhoneNumber.Builder addPhonesBuilder(
         int index) {
       return getPhonesFieldBuilder().addBuilder(
-          index, generated_proto_classes.Person.PhoneNumber.getDefaultInstance());
+          index,  Person.PhoneNumber.getDefaultInstance());
     }
     /**
      * <code>repeated .proto.Person.PhoneNumber phones = 4;</code>
      */
-    public java.util.List<generated_proto_classes.Person.PhoneNumber.Builder> 
+    public java.util.List< Person.PhoneNumber.Builder> 
          getPhonesBuilderList() {
       return getPhonesFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilder<
-        generated_proto_classes.Person.PhoneNumber, generated_proto_classes.Person.PhoneNumber.Builder, generated_proto_classes.Person.PhoneNumberOrBuilder> 
+         Person.PhoneNumber,  Person.PhoneNumber.Builder,  Person.PhoneNumberOrBuilder> 
         getPhonesFieldBuilder() {
       if (phonesBuilder_ == null) {
         phonesBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-            generated_proto_classes.Person.PhoneNumber, generated_proto_classes.Person.PhoneNumber.Builder, generated_proto_classes.Person.PhoneNumberOrBuilder>(
+             Person.PhoneNumber,  Person.PhoneNumber.Builder,  Person.PhoneNumberOrBuilder>(
                 phones_,
                 ((bitField0_ & 0x00000008) != 0),
                 getParentForChildren(),
@@ -1879,12 +1881,12 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:proto.Person)
-  private static final generated_proto_classes.Person DEFAULT_INSTANCE;
+  private static final  Person DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new generated_proto_classes.Person();
+    DEFAULT_INSTANCE = new  Person();
   }
 
-  public static generated_proto_classes.Person getDefaultInstance() {
+  public static  Person getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -1920,7 +1922,7 @@ private static final long serialVersionUID = 0L;
   }
 
   @java.lang.Override
-  public generated_proto_classes.Person getDefaultInstanceForType() {
+  public  Person getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

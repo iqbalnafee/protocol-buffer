@@ -3,7 +3,7 @@
 // source: addressbook.proto
 // Protobuf Java Version: 4.27.2
 
-package generated_proto_classes;
+package proto.generated_proto_classes;
 
 public interface AddressBookOrBuilder extends
     // @@protoc_insertion_point(interface_extends:proto.AddressBook)
@@ -12,12 +12,12 @@ public interface AddressBookOrBuilder extends
   /**
    * <code>repeated .proto.Person people = 1;</code>
    */
-  java.util.List<generated_proto_classes.Person> 
+  java.util.List<Person> 
       getPeopleList();
   /**
    * <code>repeated .proto.Person people = 1;</code>
    */
-  generated_proto_classes.Person getPeople(int index);
+  Person getPeople(int index);
   /**
    * <code>repeated .proto.Person people = 1;</code>
    */
@@ -25,11 +25,11 @@ public interface AddressBookOrBuilder extends
   /**
    * <code>repeated .proto.Person people = 1;</code>
    */
-  java.util.List<? extends generated_proto_classes.PersonOrBuilder> 
+  java.util.List<? extends PersonOrBuilder>
       getPeopleOrBuilderList();
   /**
    * <code>repeated .proto.Person people = 1;</code>
    */
-  generated_proto_classes.PersonOrBuilder getPeopleOrBuilder(
+  PersonOrBuilder getPeopleOrBuilder(
       int index);
 }

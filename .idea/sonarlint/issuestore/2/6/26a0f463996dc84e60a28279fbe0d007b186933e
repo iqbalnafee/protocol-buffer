@@ -1,0 +1,34 @@
+
+|
+java:S2293³"YReplace the type specification in this constructor call with the diamond operator ("<>").(ğóŒ¥üÿÿÿÿ8È¡±š‡2
+|
+java:S2293”"YReplace the type specification in this constructor call with the diamond operator ("<>").(£‹¿¿ıÿÿÿÿ8É¡±š‡2
+n	java:S117Î"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆÓ¡€8Ë¡±š‡2
+|
+java:S1488õ"_Immediately return this expression instead of assigning it to the temporary variable "builder".(«‰Ÿ~8Ì¡±š‡2
+n	java:S1162"RRename this field "people_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—‘¬³8ç¡±š‡2
+
+java:S4144Ì"cUpdate this method so that its implementation is not identical to "getDefaultInstance" on line 680.(ÁŒùÜ8ë¡±š‡2
+^
+java:S1126ˆ"AReplace this if-then-else statement by a single return statement.(ûÿ½%8ö¡±š‡2
+o
+java:S3252ô"QUse static access with "com.google.protobuf.AbstractMessage" for "BuilderParent".(ÔÈı¾8€¢±š‡2
+r	java:S116­"URename this field "bitField0_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ö»³Ä8€¢±š‡2
+n	java:S116¯"RRename this field "people_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ã˜¼8€¢±š‡2
+u	java:S116¹"YRename this field "peopleBuilder_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ş×äg8€¢±š‡2
+o
+java:S3252’"QUse static access with "com.google.protobuf.AbstractMessage" for "BuilderParent".(ÔÈı¾8ƒ¢±š‡2
+a
+java:S1854Î"CRemove this useless assignment to local variable "from_bitField0_".(ÆÓ¡€8‰¢±š‡2
+K
+java:S1172Í"-Remove this unused method parameter "result".(îİ¯—8Š¢±š‡2
+R
+java:S1481Î"4Remove this unused "from_bitField0_" local variable.(ÆÓ¡€8Š¢±š‡2
+n
+java:S6201Ó"PReplace this instanceof check and cast with 'instanceof AddressBook addressbook'(¹ÎŒÈ8‹¢±š‡2
+p
+java:S3776Û"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(êöÙû8‹¢±š‡2
+^	java:S125¤"<This block of commented-out lines of code should be removed.(““ùûÿÿÿÿ8‘¢±š‡2
+Y	java:S125¥"<This block of commented-out lines of code should be removed.(¯Ë¶‡8‘¢±š‡2
+G
+java:S1940²")Use the opposite operator ("==") instead.(¦ÁÕ“8’¢±š‡2
