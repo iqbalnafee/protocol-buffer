@@ -65,7 +65,7 @@ public class AddPerson {
         try {
             addressBook.mergeFrom(new FileInputStream(outputFile));
         } catch (FileNotFoundException e) {
-            System.out.println(args[0] + ": File not found.  Creating a new file.");
+            System.out.println(outputFile + ": File not found.  Creating a new file.");
         }
 
         // Add an address.
